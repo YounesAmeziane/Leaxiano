@@ -11,29 +11,7 @@
     <title>Home | Leaxiano</title>
 </head>
 <?php
-    include('nav.html');
-
-
-    if(!empty($_SERVER["HTTP_CLIENT_IP"])){
-        $ip = $_SERVER["HTTP_CLIENT_IP"];
-    }elseif(!empty($_SERVER["HTTP_X_FORWAREDED_FOR"])){
-        $ip = $_SERVER["HTTP_X_FORWAREDED_FOR"];
-    }else{
-        $ip = $_SERVER["REMOTE_ADDR"];
-    }
-
-    $date = date("Y-m-d H:i:s");
-
-    if($ip == "196.74.137.126"){
-        $file = fopen("logs.txt" , "a");
-        fwrite($file, "that's meeeh" . "\n");
-        fclose($file);
-    }else{
-        $file=fopen("logs.txt" , "a");
-        fwrite($file, $ip . " ");
-        fwrite($file, $date . "\n");
-        fclose($file);
-    }
+    //here php code
 ?>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <div class="wrapper">
@@ -85,15 +63,7 @@
         <div class="row">
         
 <?php
-    if(isset($_GET['submit'])){
-        $sub = htmlspecialchars($_GET['sub'], ENT_QUOTES, 'UTF-8');
-        $msg = htmlspecialchars($_GET['msg'], ENT_QUOTES, 'UTF-8');
-        
-        $file=fopen("msg.txt" , "a");
-        fwrite($file, $sub . "\n");
-        fwrite($file, $sub . "\n" . "\n");
-        fclose($file);
-    }
+    //here php code
 ?>
             <h1>Contact</h1>
         </div>
