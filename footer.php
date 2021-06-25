@@ -32,14 +32,7 @@
           <div class="content">
                                                     <!-- SAVING FOOTER EMAILS -->
 <?php
-    if(isset($_GET['submit'])){
-        $email_footer = htmlspecialchars($_GET['email_footer'], ENT_QUOTES, 'UTF-8');
-        if(!empty($email_footer)){
-            $file=fopen("footer-mailist.txt" , "a");
-            fwrite($file, $email_footer . "\n");
-            fclose($file);
-        }
-    }
+//php here
 ?>
             <form action="http://leaxiano.ml" method="get" onsubmit="validate()">
               <div class="email">
