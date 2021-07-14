@@ -1,4 +1,3 @@
-<?php session_start(); //doesn t workkkkkk :(?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
