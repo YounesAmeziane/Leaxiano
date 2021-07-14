@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Benne', serif;
+    outline: none;
+}
+:root{
+    --var-color-one: rgb(255, 123, 0);
+    --var-color-two: rgb(231, 112, 0); 
+}
+html{
+    background-image: url(../img/0003.png);
+    background-repeat: no-repeat;
+    background-position:  97% -30%;
+}
+.registration_form{
+    height: auto;
+    margin: 4% 50% 0 2.5%;
+    width: 50%;
+    text-align: center;
+    opacity: 0.90;
+}
+.registration_form h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    color: var(--var-color-one);
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.registration_form form{
+    background-color: #ccc;
+    width: 100%; 
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 20px 0 10px;
+    height: auto;
+}
+.registration_form form input[type="text"],
+.registration_form form input[type="password"],
+.registration_form form .row select{
+    background: none;
+    border-bottom: .5px solid var(--var-color-one);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 1vw;
+    font-size: 17px;
+}
+.registration_form form input[type="text"]:focus,
+.registration_form form input[type="password"]:focus{
+    background: rgba(255, 255, 255, 0.247);
+    border-radius: 20px;
+}
+.registration_form form .row input{
+    margin: 15px auto;
+}
+.registration_form .row input[type="submit"]{
+    padding: 1vw 0 1vw;
+    width: 70%;
+    color: #000;
+    background: var(--var-color-one);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.registration_form .row input[type="submit"]:hover{
+    background: var(--var-color-two);
+}
+@media (max-width: 858px){
+    html{
+        background-size: 100%;
+        background-position: -6px 180px;
+    }
+    .registration_form{
+        height: auto;
+        margin: 25% 0; 
+        width: 100%
+    }
+    .registration_form form{
+        width: 80%;
+        opacity: 0.90;
+    }
+    .registration_form form .row input[type="text"],
+    .registration_form form .row input[type="password"]{
+        padding: 10px;
+    }
+    .registration_form form .row input[type="submit"]{
+        padding: 10px 20px 10px 20px;
+        filter: alpha(opacity=1);
+    }
+    .registration_form form .row select{
+        display: none;
+    }
+    .bottom center{
+        margin: 150px 0;
+    }
+}
